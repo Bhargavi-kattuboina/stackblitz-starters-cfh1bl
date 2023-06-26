@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <style>
+        /* Styles for the header */
+        header {
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Styles for the introduction section */
+        .introduction {
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the sections */
+        .section-1,
+        .section-2,
+        .third-section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        pre {
+            font-family: "Courier New", Courier, monospace;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <!-- insert banner image and logo as seen in the sample website, the links for the images are provided in the question -->
+            <img src="path/to/banner-image.jpg" alt="Banner Image">
+            <img src="path/to/logo.png" alt="Logo">
+            <h1>
+                Understanding the fundamentals of state in Javascript
+            </h1>
+            <p>
+                Designed by insert-your-name-here
+            </p>
+        </header>
+
+        <div class="introduction">
+            <p>Chapter 3 from the book; Vumbula React — Co-authored by
+                John Kagga
+            </p>
+
+            <p>
+                In earlier chapters, we’ve dealt mostly with functional React components that do not require state
+                management. This chapter’s main focus is on state, its management and components that utilise it in
+                React.
+            </p>
+        </div>
+
+        <div class="section-1">
+            <h2>
+                What is State?
+            </h2>
+
+            <p>
+                State is a JavaScript object that stores a component’s dynamic data and determines the component’s
+                behaviour. Because state is dynamic, it enables a component to keep track of changing information in
+                between renders and for it to be dynamic and interactive.
+            </p>
+
+            <p>
+                State is similar to props but unlike props, it is private to a component and is controlled solely by the
+                said component. In the examples from previous chapters, the behaviour of components has primarily
+                depended on the props that are passed down to them. In those cases, the components that receive the
+                props have no control over them because props are read-only.
+            </p>
+        </div>
+
+        <div class="section-2">
+            <h2>
+                Adding State to a Class Component
+            </h2>
+
+            <pre>
+                class Greeting extends React.Component {
+                    render(){
+                      return &lt;h1&gt;
